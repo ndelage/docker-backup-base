@@ -1,10 +1,10 @@
 Model.new(:portraits_db, 'Portraits PostgreSQL') do
   database PostgreSQL do |db|
-    db.database           = "db"
+    db.name           = "db"
     db.username           = ENV['PORTRAITS_PG_USER']
     db.password           = ENV['PORTRAITS_PG_PASSWORD']
-    db.host               = ENV['PORTRAITS_PG_HOST']
-    db.port               = ENV['PORTRAITS_PG_PORT']
+    db.host               = ENV['PG_PORT_5432_TCP_ADDR']
+    db.port               = ENV['PG_PORT_5432_TCP_PORT']
   end
 
   compress_with Gzip
