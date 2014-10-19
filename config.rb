@@ -5,7 +5,7 @@ end
 Backup::Storage::S3.defaults do |s3|
   s3.access_key_id     = ENV["AWS_ACCESS_KEY_ID"]
   s3.secret_access_key = ENV["AWS_SECRET_ACCESS_KEY"]
-  s3.bucket            = "robin"
+  s3.bucket            = "robin-0830"
 end
 
 Notifier::Mail.defaults do |mail|
