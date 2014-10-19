@@ -26,5 +26,6 @@ Notifier::Mail.defaults do |mail|
   mail.user_name            = 'nate@natedelage.com'
   mail.password             = 'PjF7StwXBKTLxDgowlicBA'
   mail.authentication       = 'plain'
+  mail.domain               = 'natedelage.com'
 end
 
