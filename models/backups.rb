@@ -14,4 +14,9 @@ Model.new(:portraits_db, 'Portraits PostgreSQL') do
     s3.keep  = 24
     s3.path  = "/portraits/db/"
   end
+
+  store_with Local do |local|
+    local.path = '~/backups/portraits/db/'
+    local.keep = 24
+  end
 end
