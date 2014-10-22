@@ -16,7 +16,7 @@ Storage::S3.defaults do |s3|
 end
 
 Notifier::Mail.defaults do |mail|
-  mail.on_success           = true
+  mail.on_success           = false
   mail.on_warning           = true
   mail.on_failure           = true
   mail.from                 = 'nate+henri@natedelage.com'
